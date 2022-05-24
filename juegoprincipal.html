@@ -4,10 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link src="./css/reset.css"></link>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilosprincipales.css">
     <title>Document</title>
 </head>
 <body>
+
+    <header class="encabezado"> <h1><img src="./imagenesPaginaPrincipal/Vector.svg" alt=""></h1></header>
     
+    <main>
+        
+        <div class="mugneco-canvas">
+            <div id="ahorcado"></div>´
+            <br>            
+            <div id="contenedorPalabra"></div>
+            <br>
+            <div id="letrasUsadas"></div>
+        </div>
+
+        <div id="mensaje"></div>
+        
+
+        <div class="botones-principales-juegoprincipal">            
+            <button id="botonInicio">Iniciar Juego</button>
+            <button id="botonAgregarPalabra">Agregar Palabra</button>
+        </div>
+        <div class="botones-durante-juego">
+            <button class="botonNuevoJuego" id="botonNuevoJuego">Nuevo Juego</button>
+            <button class="botonDesistir" id="botonDesistir">Desistir</button>
+        </div>
+
+        <div id="nuevaPalabra">
+            <label for="leerPalabra">Escriba palabra:</label>
+            <input type="text" name="Palabra" id="leerPalabra">
+            <button id="guardarPalabra">Aceptar Palabra</button>
+        </div>
+        
+    </main>  
+
+    <script src="js/iniciarJuego.js"></script>
+
+
 </body>
 </html>
